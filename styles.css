@@ -1,0 +1,59 @@
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-lightgray: hsl(212, 45%, 89%);
+    --color-grayishblue: hsl(220, 15%, 55%);
+    --color-darkblue: hsl(218, 44%, 22%);
+
+    --fs-base: 15px;
+    --ff-base: "Outfit", sans-serif;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    background: var(--color-lightgray);
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    align-items: center;
+    
+}
+
+div{
+    background: var(--color-white);
+    width: 18rem;
+    padding:1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+h2{
+    color: var(--color-darkblue);
+    font-weight: var(--fw-700);
+    font-size: 1.5rem;
+}
+
+img {
+    border-radius: 0.5rem;
+    width:100%;
+}
+
+p {
+    color: var(--color-grayishblue);
+    font-weight: var(--fw-400);
+    font-size: 1rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 375px) {
+
+}
