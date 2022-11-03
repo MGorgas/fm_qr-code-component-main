@@ -19,14 +19,22 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## My process
 
+I started with the HTML contents and added the styles afterwards.
+
+_note: I applied the changes [@Lucas](https://www.frontendmentor.io/profile/correlucas) recommended in his comment as best as i could at this moment. Thank you for your help!_
+
 ### Built with
 
 - HTML5
 - CSS
 
+
+
 ### What I learned
 
 Learned about em and rem and using variables.
+
+Used a CSS RESET from [piccalil.li](https://piccalil.li/blog/a-modern-css-reset/).
 
 ## Author
 
