@@ -1,3 +1,79 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
 :root{
     --color-white: hsl(0, 0%, 100%);
     --color-lightgray: hsl(212, 45%, 89%);
@@ -10,35 +86,28 @@
     --fw-700: 700;
 }
 
-html,
 body{
-    height: 100%;
-}
-
-*{
-    margin:0;
-    padding: 0
-}
-
-
-body{
+    height: 100vh;
     background: var(--color-lightgray);
     font-family: var(--ff-base);
     font-size: var(--fs-base);
-    align-items: center;
-    
+    align-items: center; 
+    color: var(--color-grayishblue);
+    font-weight: var(--fw-400);
+    font-size: 1rem;
 }
 
-div{
+main{
+    margin:20px;
     background: var(--color-white);
-    width: 18rem;
-    padding:1rem;
+    width: 20rem;
+    padding: 1.25rem;
     border-radius: 1rem;
     text-align: center;
-    box-shadow: 0 1rem 1rem lightgray;
+    box-shadow: 0px 20px 35px 0px rgba(0,0,0,0.2);
 }
 
-h2{
+h1{
     color: var(--color-darkblue);
     font-weight: var(--fw-700);
     font-size: 1.5rem;
@@ -50,20 +119,13 @@ img {
     width:100%;
 }
 
-p {
+p{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--color-grayishblue);
-    font-weight: var(--fw-400);
-    font-size: 1rem;
 }
 
 .flex{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-@media (max-width: 375px) {
-
 }
